@@ -1,0 +1,42 @@
+# Netlify 部署配置：纯静态站，无构建步骤
+[build]
+  publish = "."
+
+# 唯一路径规范：干净 URL（可选）
+[[redirects]]
+  from = "/interior"
+  to = "/interior.html"
+  status = 200
+
+[[redirects]]
+  from = "/automotive"
+  to = "/automotive.html"
+  status = 200
+
+[[redirects]]
+  from = "/furniture"
+  to = "/furniture.html"
+  status = 200
+
+[[redirects]]
+  from = "/methodology"
+  to = "/methodology.html"
+  status = 200
+
+# 安全与缓存头
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+
+[[headers]]
+  for = "/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"

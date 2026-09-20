@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://wulinjun007.github.io/space-folding-site/sitemap.xml
