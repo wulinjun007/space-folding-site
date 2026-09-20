@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>汽车空间折叠 · 空间折叠设计手册</title>
+<meta name="description" content="汽车空间折叠：车身布置基础、座椅分级折叠体系、纯平地台、场景化座舱，以及场景定义空间五步法与案例拆解。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231d2530'/%3E%3Cpath d='M7 8h18L7 25z' fill='%23d4502a'/%3E%3Cpath d='M25 8v17H7z' fill='%23f6f3ec'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html">
+      <svg width="26" height="26" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#1d2530"/><path d="M7 8h18L7 25z" fill="#d4502a"/><path d="M25 8v17H7z" fill="#f6f3ec"/></svg>
+      空间折叠 <small>SPACE-FOLDING HANDBOOK</small>
+    </a>
+    <button class="nav-toggle" aria-label="菜单">☰</button>
+    <nav class="nav-links">
+      <a href="index.html">总览</a>
+      <a href="methodology.html">通用方法论</a>
+      <a href="interior.html">室内</a>
+      <a href="automotive.html">汽车</a>
+      <a href="furniture.html">家具</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="crumb">领域二 · Automotive</p>
+      <h1>汽车空间折叠</h1>
+      <p class="lede">乘员空间与载物空间争夺同一根轴距。汽车是折叠设计强度最高的领域：机构要过碰撞法规，折叠要扛 15 年振动，还要让用户在停车场单手完成。</p>
+      <div class="page-meta"><span>· 阅读约 15 分钟</span><span>· 含 2 张图解 + 1 个交互演示</span><span>· 附 10 条检查清单</span></div>
+      <div class="toc-chips">
+        <a href="#a-conflict"><b>01</b>核心矛盾</a>
+        <a href="#a-package"><b>02</b>布置基础：折叠前的地基</a>
+        <a href="#a-seat"><b>03</b>座椅折叠体系</a>
+        <a href="#a-cabin"><b>04</b>形态与场景化座舱</a>
+        <a href="#a-method"><b>05</b>思路：场景定义空间</a>
+        <a href="#a-cases"><b>06</b>案例拆解</a>
+        <a href="#a-pitfalls"><b>07</b>常见坑</a>
+        <a href="#a-checklist"><b>08</b>检查清单</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 01 核心矛盾 ============ -->
+  <section class="sec" id="a-conflict">
+    <div class="wrap-narrow">
+      <div class="sec-head"><span class="sec-num">01</span><h2>核心矛盾：一车两命</h2></div>
+      <p class="sec-intro">车的长度被三重锁死：法规与车位尺寸、城市机动性、风阻与能耗。可用户既要 5 座通勤，又要拉 1.7 米的自行车、搬洗衣机、睡两个人。</p>
+      <div class="kp">
+        <span class="kp-tag">知识点</span>
+        <h3>汽车折叠的三条约束线</h3>
+        <ul>
+          <li><b>外部约束</b>：车长决定车位兼容性与转弯半径；车宽决定车道通行——总有一个上限，膨胀不了。</li>
+          <li><b>内部争夺</b>：舱内体积 = 定值，乘员坐姿空间（人是最占地方的载荷）与货物的体积直接互斥。</li>
+          <li><b>安全约束</b>：座椅及其折叠 / 锁定机构属于安全件，国标与各类法规对座椅强度、锁止、行李舱侵入有硬性要求——<b>任何折叠策略都不能绕开认证</b>。</li>
+        </ul>
+        <p>所以汽车折叠的解题思路与住宅不同：住宅可以"慢慢折"，汽车必须<b>"秒级切换 + 单点操作 + 两态皆安全"</b>。</p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="sec-divider">
+
+  <!-- ============ 02 布置基础 ============ -->
+  <section class="sec" id="a-package">
+    <div class="wrap">
+      <div class="sec-head"><span class="sec-num">02</span><h2>布置基础：折叠自由度是"布置"出来的</h2></div>
+      <p class="sec-intro">看一台车折叠厉不厉害，答案往往在你看不见的底盘剖面里。这一节是理解所有座椅折叠技巧的前置知识。</p>
+
+      <div class="grid2">
+        <div class="kp">
+          <span class="kp-tag">知识点</span>
+          <h3>H 点与布置链</h3>
+          <ul>
+            <li><b>H 点（胯点）</b>是座椅布置的基准：从踏板出发 → 确定 H 点 → 再定方向盘与靠背角度，这条"布置链"决定舱内每一毫米的归属。</li>
+            <li>轴距里扣掉机舱、风挡斜度、后排腿部空间，剩给"折叠玩法"的长度很有限——所以<b>每 50mm 的布置效率都是折叠自由的来源</b>。</li>
+            <li>人体包络按高百分位（如 95 百分位）校核：折叠放倒后的载物面能不能塞进滑雪板，布置阶段就决定了。</li>
+          </ul>
+        </div>
+        <div class="kp">
+          <span class="kp-tag">知识点</span>
+          <h3>轮包与地板：折叠的天花板</h3>
+          <ul>
+            <li><b>后轮包干涉</b>：后轮拱向舱内凸进约 200–300mm（典型值），直接决定放倒后载物面的宽度与形状——很多车放倒是"凹"字形而非矩形，根源在此。</li>
+            <li><b>地板平整化</b>：燃油车地板中央有传动轴凸起；电动车电池平铺，地台天生纯平——纯平地台让"放倒即纯平"从奢侈变成标配。</li>
+            <li><b>重物前置化</b>：本田把油箱挪到前排座椅下方，为的是腾空后排地板——<b>把"不可折叠的重物"挪出折叠区，是布置阶段最高杠杆的一步</b>。</li>
+          </ul>
+        </div>
+      </div>
+
+      <figure class="diagram">
+        <svg viewBox="0 0 860 280" role="img" aria-label="燃油车与电动车地板剖面对比">
+          <g font-family="-apple-system,'PingFang SC',sans-serif" font-size="12.5">
+            <!-- 燃油车 -->
+            <g transform="translate(20,10)">
+              <rect x="0" y="0" width="400" height="250" rx="10" fill="#fbf8f0" stroke="#ddd5c6"/>
+              <text x="200" y="26" text-anchor="middle" font-size="14" font-weight="700" fill="#1d2530">燃油平台 · 凸起地板</text>
+              <line x1="30" y1="170" x2="370" y2="170" stroke="#1d2530" stroke-width="3"/>
+              <path d="M150,170 q50,-38 120,0" fill="#c6bcaa" stroke="#1d2530" stroke-width="1.6"/>
+              <text x="210" y="152" text-anchor="middle" font-size="11.5" fill="#a83a1a" font-weight="700">传动轴凸起</text>
+              <circle cx="80" cy="185" r="24" fill="none" stroke="#1d2530" stroke-width="2.5"/>
+              <circle cx="320" cy="185" r="24" fill="none" stroke="#1d2530" stroke-width="2.5"/>
+              <g fill="#8b95a3"><circle cx="80" cy="185" r="6"/><circle cx="320" cy="185" r="6"/></g>
+              <text x="200" y="228" text-anchor="middle" font-size="11.5" fill="#8b95a3">放倒后载物面中央隆起 → 只能"近似纯平"</text>
+            </g>
+            <!-- 电动车 -->
+            <g transform="translate(440,10)">
+              <rect x="0" y="0" width="400" height="250" rx="10" fill="#fbf8f0" stroke="#ddd5c6"/>
+              <text x="200" y="26" text-anchor="middle" font-size="14" font-weight="700" fill="#1d2530">电动平台 · 纯平地台</text>
+              <line x1="30" y1="170" x2="370" y2="170" stroke="#1d2530" stroke-width="3"/>
+              <rect x="60" y="176" width="280" height="22" rx="5" fill="#dfeaf0" stroke="#2c6a8c" stroke-width="1.6"/>
+              <text x="200" y="191" text-anchor="middle" font-size="11" fill="#1e4e68" font-weight="700">电池平铺（滑板底盘）</text>
+              <circle cx="80" cy="215" r="24" fill="none" stroke="#1d2530" stroke-width="2.5"/>
+              <circle cx="320" cy="215" r="24" fill="none" stroke="#1d2530" stroke-width="2.5"/>
+              <g fill="#8b95a3"><circle cx="80" cy="215" r="6"/><circle cx="320" cy="215" r="6"/></g>
+              <text x="200" y="105" text-anchor="middle" font-size="11.5" fill="#1e4e68" font-weight="700">↑ 放倒座椅即得连续纯平载物面</text>
+              <text x="200" y="228" text-anchor="middle" font-size="11.5" fill="#8b95a3">午休床垫、大件载物的物理基础</text>
+            </g>
+          </g>
+        </svg>
+        <figcaption><b>图 1</b> · 地板剖面决定折叠上限：电动化把"纯平"从选装变成基因。<b>折叠能力的竞争，首先是布置的竞争。</b></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <hr class="sec-divider">
+
+  <!-- ============ 03 座椅折叠体系 ============ -->
+  <section class="sec" id="a-seat">
+    <div class="wrap">
+      <div class="sec-head"><span class="sec-num">03</span><h2>座椅折叠体系：从"放倒"到"消失"</h2></div>
+      <p class="sec-intro">座椅是车内最大的可变构件。折叠体系的设计水平 = 模式数量 × 切换便利性 × 放倒平整度。</p>
+
+      <div class="table-wrap">
+        <table>
+          <tr><th>折叠级别</th><th>动作</th><th>典型应用</th><th>得失</th></tr>
+          <tr><td>靠背放倒</td><td>调角器解锁，靠背前折</td><td>几乎所有两厢 / SUV 后排</td><td>最简单，但载物面有台阶与倾角</td></tr>
+          <tr><td>4:6 分折</td><td>靠背分两段独立放倒</td><td>主流家用车标配</td><td>载人与载物可部分兼得</td></tr>
+          <tr><td>坐垫上翻 + 靠背放倒</td><td>坐垫向前翻转，靠背放倒形成高载物腔</td><td>本田 Magic Seats（飞度等）</td><td>能立放绿植 / 自行车，空间形态更立体</td></tr>
+          <tr><td>整体翻折沉入（stow-in-floor）</td><td>整排座椅前翻并沉入地板下腔体</td><td>MPV 第三排（奥德赛等）</td><td>放倒后完全隐形，代价是地板抬高与机构成本</td></tr>
+          <tr><td>长滑 + 旋转</td><td>座椅沿超长滑轨移动 / 绕轴旋转</td><td>露营模式对坐、新势力座舱</td><td>社交化空间，机构与安全成本最高</td></tr>
+        </table>
+      </div>
+
+      <div class="demo" data-demo="seat">
+        <div class="demo-stage">
+          <!-- 直立态 -->
+          <svg class="state s1 active" viewBox="0 0 420 230" role="img" aria-label="座椅直立态">
+            <g font-family="-apple-system,'PingFang SC',sans-serif">
+              <line x1="20" y1="196" x2="400" y2="196" stroke="#1d2530" stroke-width="3"/>
+              <rect x="120" y="168" width="90" height="26" rx="4" fill="#c6bcaa" stroke="#1d2530" stroke-width="1.6"/>
+              <rect x="128" y="140" width="110" height="30" rx="8" fill="#2c6a8c"/>
+              <rect x="212" y="52" width="30" height="92" rx="10" fill="#d4502a"/>
+              <text x="227" y="40" text-anchor="middle" font-size="12.5" fill="#a83a1a" font-weight="700">靠背直立</text>
+              <text x="80" y="128" font-size="12" fill="#49566a">滑轨</text>
+              <line x1="60" y1="182" x2="200" y2="182" stroke="#8b95a3" stroke-width="1.4" stroke-dasharray="4 4"/>
+              <text x="300" y="120" font-size="12" fill="#8b95a3">载人态：5 座</text>
+            </g>
+          </svg>
+          <!-- 纯平态 -->
+          <svg class="state s2" viewBox="0 0 420 230" role="img" aria-label="座椅放倒纯平态">
+            <g font-family="-apple-system,'PingFang SC',sans-serif">
+              <line x1="20" y1="196" x2="400" y2="196" stroke="#1d2530" stroke-width="3"/>
+              <rect x="120" y="168" width="90" height="26" rx="4" fill="#c6bcaa" stroke="#1d2530" stroke-width="1.6"/>
+              <rect x="128" y="140" width="110" height="30" rx="8" fill="#4a7c59"/>
+              <rect x="234" y="138" width="150" height="30" rx="8" fill="#d4502a"/>
+              <text x="309" y="126" text-anchor="middle" font-size="12.5" fill="#a83a1a" font-weight="700">靠背放倒 ≈ 与坐垫齐平</text>
+              <path d="M300,196 h96" stroke="#4a7c59" stroke-width="2.4"/>
+              <text x="300" y="215" text-anchor="middle" font-size="11.5" fill="#3c6a4c">连续载物面（理想纯平，实际角度差 3–5° 已可感知）</text>
+              <text x="80" y="128" font-size="12" fill="#49566a">滑轨</text>
+            </g>
+          </svg>
+          <!-- 沉入态 -->
+          <svg class="state s3" viewBox="0 0 420 260" role="img" aria-label="座椅沉入地板态">
+            <g font-family="-apple-system,'PingFang SC',sans-serif">
+              <line x1="20" y1="196" x2="400" y2="196" stroke="#1d2530" stroke-width="3"/>
+              <rect x="220" y="170" width="150" height="40" fill="#fbf8f0"/>
+              <line x1="220" y1="196" x2="250" y2="196" stroke="#1d2530" stroke-width="3" stroke-dasharray="4 4"/>
+              <path d="M250,196 l-10,14 M270,196 l-10,14 M290,196 l-10,14 M310,196 l-10,14 M330,196 l-10,14 M350,196 l-10,14" stroke="#8b95a3" stroke-width="1.2"/>
+              <rect x="252" y="204" width="112" height="28" rx="8" fill="#d4502a" opacity=".85"/>
+              <text x="308" y="223" text-anchor="middle" font-size="11" fill="#fff" font-weight="700">座椅整体沉入地板腔</text>
+              <rect x="120" y="168" width="96" height="26" rx="4" fill="#c6bcaa" stroke="#1d2530" stroke-width="1.6" opacity=".4"/>
+              <text x="150" y="128" font-size="12.5" fill="#49566a" font-weight="700">地台隐形 / 完全让位</text>
+              <text x="308" y="120" text-anchor="middle" font-size="12" fill="#a83a1a" font-weight="700">stow-in-floor</text>
+              <text x="308" y="137" text-anchor="middle" font-size="11" fill="#8b95a3">MPV 第三排经典方案</text>
+            </g>
+          </svg>
+        </div>
+        <div class="demo-ctl">
+          <button class="active" data-state="s1" data-note="日常载人：坐垫 + 直立靠背，H 点、滑轨行程、调角器档位决定舒适边界。">① 载人态</button>
+          <button data-state="s2" data-note="靠背前折放倒，追求与坐垫、地板三点连成连续平面——角度公差是核心工程指标。">② 放倒纯平</button>
+          <button data-state="s3" data-note="整排翻折沉入地板下腔体，载物区无任何凸起——用地板高度和机构成本换来的完全隐形。">③ 沉入隐形</button>
+        </div>
+        <p class="demo-caption"><b>① 载人态</b> — 日常载人：坐垫 + 直立靠背，H 点、滑轨行程、调角器档位决定舒适边界。</p>
+      </div>
+
+      <div class="grid2">
+        <div class="kp">
+          <span class="kp-tag">知识点</span>
+          <h3>折叠座椅的机构四件套</h3>
+          <ul>
+            <li><b>滑轨</b>：前后行程（常见约 200mm 出头），承担整车寿命内上万次调节。</li>
+            <li><b>调角器（recliner）</b>：靠背棘轮锁定，也是折叠的"开锁点"。</li>
+            <li><b>翻折解锁</b>：一键 / 拉带释放 easy-entry，弹簧辅助前翻——进出第三排的礼仪通道。</li>
+            <li><b>两态锁止</b>：直立与放倒都必须独立锁死并通过碰撞测试——折叠机构是安全件，不是家具五金。</li>
+          </ul>
+        </div>
+        <div class="kp">
+          <span class="kp-tag">知识点</span>
+          <h3>数据感觉：折叠换来了多少空间</h3>
+          <ul>
+            <li>中型 SUV：5 座态后备厢约 500–600L，放倒后约 1500–2100L（典型区间）——<b>折叠带来 3 倍上下的体积弹性</b>。</li>
+            <li>放倒平整度：与纯平偏差 3–5°，床垫体验已明显打折——"放倒角度"是隐藏的产品力指标。</li>
+            <li>载物面宽度：受轮包限制，放倒后"矩形率"越高，装载效率越高。</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="sec-divider">
+
+  <!-- ============ 04 形态与场景化座舱 ============ -->
+  <section class="sec" id="a-cabin">
+    <div class="wrap">
+      <div class="sec-head"><span class="sec-num">04</span><h2>超越座椅：形态折叠与场景化座舱</h2></div>
+      <p class="sec-intro">座椅之外，整车的"壳"和"电"也在参与折叠。</p>
+
+      <div class="grid2">
+        <div class="kp">
+          <span class="kp-tag">知识点</span>
+          <h3>门系与尾部形态</h3>
+          <ul>
+            <li><b>MPV 侧滑门</b>：滑移不占侧向开启包络，窄巷停车也能上下人——"滑"的运动方式在汽车上的标杆应用。</li>
+            <li><b>对开门 / 无 B 柱</b>：开口巨大，装载与仪式感兼得，但车身刚性为开洞付出代价。</li>
+            <li><b>掀背 / 旅行 / SUV 尾门</b>：尾部开口高度与角度决定大件装卸的"最后一米"体验。</li>
+          </ul>
+        </div>
+        <div class="kp">
+          <span class="kp-tag">知识点</span>
+          <h3>座舱电子的"软折叠"</h3>
+          <ul>
+            <li><b>伸缩方向盘 / 翻转屏</b>：午休模式下屏幕翻转避光、方向盘收拢让位——为"空间模式"让路的电子件。</li>
+            <li><b>折叠小桌板 / 隐藏冷暖箱</b>：办公与餐饮功能按需展开，本质是家具折叠在车内的移植。</li>
+            <li><b>遮物帘 / 卷帘</b>：载物隐私的"卷"式机构，折叠家族里最便宜的一员。</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="kp">
+        <span class="kp-tag">知识点</span>
+        <h3>场景模式：把折叠"产品化"</h3>
+        <ul>
+          <li><b>午休模式</b>：座椅放倒 + 遮光 + 空调守候 + 熄屏——多个折叠动作被打包成"一键场景"，用户操作从 5 步变 1 步。</li>
+          <li><b>露营模式</b>：对坐布局（座椅旋转）+ 对外放电（常见 2–3kW 级）+ 尾舱帐篷——车厢变成"可展开的房间"。</li>
+          <li><b>载物模式</b>：纯平 + 锚点 + 隔网——折叠之后的"收纳态"同样需要设计。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <hr class="sec-divider">
+
+  <!-- ============ 05 思路 ============ -->
+  <section class="sec" id="a-method">
+    <div class="wrap-narrow">
+      <div class="sec-head"><span class="sec-num">05</span><h2>设计思路：场景定义空间五步法</h2></div>
+      <p class="sec-intro">汽车折叠最容易犯的错是"为参数表造折叠"（放倒容积写进 PPT，用户一年用一次）。正确顺序：先场景，后冲突，再折叠。</p>
+
+      <div class="think">
+        <span class="think-tag">思路细节</span>
+        <h3>五步全流程（产品 / 改装通用）</h3>
+        <ol class="steps">
+          <li><b>场景清单</b>——列出 Top5 场景与频次：通勤（每日 / 1–2 人）、家庭出行（每周 / 5 人）、大件搬运（每月 / 1.5m+ 物件）、户外过夜（每季 / 2 人平躺）。用真实频次，不拍脑袋。</li>
+          <li><b>状态定义</b>——每个场景写出空间状态：几座、载物体积、平整度要求、出入口要求（侧门 / 尾门）。</li>
+          <li><b>冲突矩阵</b>——两两对比场景，找出互斥点：5 座态与 1.9m 载物互斥；三排立起与后备箱容积互斥。互斥点就是折叠设计的工作清单。</li>
+          <li><b>折叠策略选择</b>——对每个互斥点选级别（回到第 03 节分级表）：通勤优先 → 二排 4:6 分折足够；过夜优先 → 纯平是硬指标；载物优先 → 沉入式或坐垫上翻。</li>
+          <li><b>折叠代价核算</b>——每项折叠能力都有账单：机构重量、成本、靠背刚性（放倒机构会掏空靠背骨架）、异响风险、维护点。<b>砍掉频次撑不起代价的折叠项</b>，是克制也是专业。</li>
+        </ol>
+      </div>
+
+      <div class="think">
+        <span class="think-tag">思路细节</span>
+        <h3>三个经典取舍</h3>
+        <ol class="steps">
+          <li><b>纯平 vs 分段</b>——完全纯平需要座椅、地板、轮包三者精确对齐，成本高；分段高差配"垫块 accessory"是低成本近似解。</li>
+          <li><b>电动 vs 手动</b>——电动放倒优雅但增加故障点、为电机牺牲靠背刚性；手动更可靠更轻。高频折叠（每周）值得电动，低频折叠手动 + 好解锁拉带即可。</li>
+          <li><b>三排存在感 vs 后备箱底线</b>——7 座车的真问题是"第三排立起时后备箱还剩多少"：设计底线应设为"立着三排也放得下一台婴儿车 + 全家行李"，否则第三排只是参数。</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <hr class="sec-divider">
+
+  <!-- ============ 06 案例 ============ -->
+  <section class="sec" id="a-cases">
+    <div class="wrap">
+      <div class="sec-head"><span class="sec-num">06</span><h2>案例拆解：三种折叠哲学</h2></div>
+      <p class="sec-intro">本田代表"布置前置化"，特斯拉代表"入口体验"，场景化 MPV 代表"折叠的场景产品化"。</p>
+
+      <div class="case">
+        <div class="case-head"><h3>本田 Magic Seats 魔术座椅</h3><span class="case-en">Honda Fit / Odyssey · 1990s 至今</span></div>
+        <p class="case-facts">油箱前置 · 坐垫上翻 "Tall Mode" · 第三排沉入地板</p>
+        <p style="font-size:15px;color:var(--ink-soft)">飞度把油箱布置在前排座椅下方，腾空了后排地板——于是后排坐垫可以向上翻转，靠背放倒后形成一个可立放的"高腔体"载物间；奥德赛则让第三排整体沉入地板，获得纯平载物面。</p>
+        <div class="case-grid">
+          <div class="case-cell"><h4>折叠策略</h4><p>不折座椅本身，先折"布置"：重物（油箱）让位，折叠自由度在画底盘图时就被决定了。</p></div>
+          <div class="case-cell"><h4>机构要点</h4><p>坐垫上翻只需单手拉带 + 自重定位，机构极简——低成本、高频可靠。</p></div>
+          <div class="case-cell"><h4>启示</h4><p><b>折叠设计的高手过招在看不见的布置层</b>：挪走一块电池 / 油箱，胜过十个精巧铰链。</p></div>
+        </div>
+      </div>
+
+      <div class="case">
+        <div class="case-head"><h3>特斯拉 Model Y 一键放倒</h3><span class="case-en">Tesla · 2020 至今</span></div>
+        <p class="case-facts">电动一键放倒 · 纯平地台 · 前备箱 · 官方合计约 2100L</p>
+        <p style="font-size:15px;color:var(--ink-soft)">站在车尾即可通过后备箱内侧开关电动放倒二排座椅，配合电池平铺的纯平地台，装载大件全程不用爬进车厢；前备箱补足"分级载物"。</p>
+        <div class="case-grid">
+          <div class="case-cell"><h4>折叠策略</h4><p>把"折叠操作的入口"设在货物旁——搬运的人站在哪，开关就在哪。</p></div>
+          <div class="case-cell"><h4>机构要点</h4><p>电动翻折机构 + 纯平地台；为电机与折叠让路，靠背刚性有所取舍。</p></div>
+          <div class="case-cell"><h4>启示</h4><p>折叠体验 = 机构 × <b>入口设计</b>。操作位置比操作本身更影响真实使用率。</p></div>
+        </div>
+      </div>
+
+      <div class="case">
+        <div class="case-head"><h3>场景化 MPV 座舱</h3><span class="case-en">理想 MEGA / L9 等新势力 · 2020s</span></div>
+        <p class="case-facts">纯平地板 · 一键午休 · 小桌板 / 冷暖箱 · 对外放电</p>
+        <p style="font-size:15px;color:var(--ink-soft)">把家具级的折叠（桌板、箱体）与座椅折叠打包成"场景"：午休模式一键进入，露营模式对坐 + 供电。折叠不再是单点功能，而是一组可调用的空间状态。</p>
+        <div class="case-grid">
+          <div class="case-cell"><h4>折叠策略</h4><p>以场景为单位组织折叠动作——用户面对的是"午休"，不是"先放倒再关窗再调空调"。</p></div>
+          <div class="case-cell"><h4>机构要点</h4><p>电动座椅 + 电子件联动；纯平地板（电池平铺）是全场景的物理底座。</p></div>
+          <div class="case-cell"><h4>启示</h4><p><b>折叠只是手段，场景打包才是产品化</b>——这一步把"参数"变成了"生活方式"。</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="sec-divider">
+
+  <!-- ============ 07 常见坑 ============ -->
+  <section class="sec" id="a-pitfalls">
+    <div class="wrap">
+      <div class="sec-head"><span class="sec-num">07</span><h2>常见坑：买车与设计都要防</h2></div>
+      <div class="pitfalls">
+        <div class="pitfall"><b>坑 1 · "放倒"≠"纯平"</b>参数表不写角度。实车体验时带一把卷尺和一个水平仪思路：看放倒后的台阶数与倾角，3–5° 的偏差过夜就能感受到。</div>
+        <div class="pitfall"><b>坑 2 · 三排立起后备箱归零</b>7 座车动态体验通常只演示二排放倒。务必实测"第三排立起 + 全家行李"的真实剩余容积。</div>
+        <div class="pitfall"><b>坑 3 · 电动折叠单点失效</b>电机或电控故障时折叠瘫痪。确认有手动应急解锁路径，再为电动买单。</div>
+        <div class="pitfall"><b>坑 4 · 滑轨吃沙</b>座椅滑轨进灰进沙后异响、卡滞。越野 / 海边使用后要清理；设计端要做防尘罩与可维护性。</div>
+        <div class="pitfall"><b>坑 5 · 轮包吃宽度</b>放倒后载物面是"凹"字形：1.2m 宽的家具塞不进"标称 1.3m"的开口。量开口，不量标称。</div>
+        <div class="pitfall"><b>坑 6 · 儿童座椅锁死折叠</b>ISOFIX 座椅装上后，对应侧座椅往往无法翻折。有娃家庭按"装了座椅还能怎么折"来规划。</div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="sec-divider">
+
+  <!-- ============ 08 检查清单 ============ -->
+  <section class="sec" id="a-checklist">
+    <div class="wrap-narrow">
+      <div class="sec-head"><span class="sec-num">08</span><h2>汽车折叠检查清单</h2></div>
+      <p class="sec-intro">选车带去试驾、做产品定义或改装评审时逐条过。</p>
+      <div class="checklist-wrap">
+        <div class="checklist-bar"><span>完成进度 <b data-count>0 / 10</b></span><button class="checklist-reset">重置</button></div>
+        <ul class="checklist" data-store="automotive">
+          <li><label><input type="checkbox"><span>已列出 Top5 用车场景及真实频次（次 / 月），而非参数表驱动</span></label></li>
+          <li><label><input type="checkbox"><span>冲突矩阵完成：任两场景的空间状态互斥点已逐条标注</span></label></li>
+          <li><label><input type="checkbox"><span>放倒平整度实测：分段高差可接受，或已配垫块方案</span></label></li>
+          <li><label><input type="checkbox"><span>第三排立起时，后备箱仍满足"默认出行行李"底线</span></label></li>
+          <li><label><input type="checkbox"><span>折叠操作可在车外完成：搬运大件时无需爬入车内</span></label></li>
+          <li><label><input type="checkbox"><span>儿童安全座椅安装位与折叠路径不干涉（按实际座椅型号验证）</span></label></li>
+          <li><label><input type="checkbox"><span>折叠机构两态锁止均满足碰撞安全要求，认证信息可查</span></label></li>
+          <li><label><input type="checkbox"><span>滑轨 / 铰链有防尘与可维护性考虑，异响可自行处理</span></label></li>
+          <li><label><input type="checkbox"><span>电动折叠具备手动应急方案，失效不锁死货物</span></label></li>
+          <li><label><input type="checkbox"><span>载物态配齐锚点 / 隔网 / 遮挡，"收纳态"与"使用态"同等被设计</span></label></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <h4>关于本站</h4>
+      <p>「空间折叠设计手册」是一份面向设计学习者与从业者的知识整理：用同一套模型（几何 / 机构 / 时序）解释室内、汽车、家具三个领域的折叠设计。文中尺寸与数据为行业常用经验值或公开资料，实际项目请以规范与实测为准。</p>
+    </div>
+    <div>
+      <h4>页面导航</h4>
+      <ul>
+        <li><a href="index.html">总览 · 什么是空间折叠</a></li>
+        <li><a href="methodology.html">通用方法论</a></li>
+        <li><a href="interior.html">室内空间折叠</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>继续阅读</h4>
+      <ul>
+        <li><a href="furniture.html">家具空间折叠</a></li>
+        <li><a href="methodology.html#mechanism">机构知识库</a></li>
+        <li><a href="index.html#domains">三大领域对照</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 空间折叠设计手册 · 用折纸的逻辑理解空间</div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

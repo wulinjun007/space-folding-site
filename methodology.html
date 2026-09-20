@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>通用方法论 · 空间折叠设计手册</title>
+<meta name="description" content="空间折叠的通用方法论：第一性原理、六种基本运动、机构知识库、几何要点、时序设计法、安全耐久与跨领域原则映射。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231d2530'/%3E%3Cpath d='M7 8h18L7 25z' fill='%23d4502a'/%3E%3Cpath d='M25 8v17H7z' fill='%23f6f3ec'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html">
+      <svg width="26" height="26" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#1d2530"/><path d="M7 8h18L7 25z" fill="#d4502a"/><path d="M25 8v17H7z" fill="#f6f3ec"/></svg>
+      空间折叠 <small>SPACE-FOLDING HANDBOOK</small>
+    </a>
+    <button class="nav-toggle" aria-label="菜单">☰</button>
+    <nav class="nav-links">
+      <a href="index.html">总览</a>
+      <a href="methodology.html">通用方法论</a>
+      <a href="interior.html">室内</a>
+      <a href="automotive.html">汽车</a>
+      <a href="furniture.html">家具</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="crumb">Methodology · 适用于一切领域</p>
+      <h1>通用方法论：折叠的底层逻辑</h1>
+      <p class="lede">三个领域共享的公理库——六种基本运动、五类机构、时序设计法。学完这一页，你看任何折叠设计都能"透视"出它的骨架。</p>
+      <div class="page-meta">
+        <span>· 阅读约 18 分钟</span><span>· 含 3 张图解</span><span>· 附术语表</span>
+      </div>
+      <div class="toc-chips">
+        <a href="#principle"><b>01</b>第一性原理</a>
+        <a href="#motions"><b>02</b>六种基本运动</a>
+        <a href="#mechanism"><b>03</b>机构知识库</a>
+        <a href="#geometry"><b>04</b>几何要点</a>
+        <a href="#timeline"><b>05</b>时序设计法</a>
+        <a href="#safety"><b>06</b>安全与耐久</a>
+        <a href="#mapping"><b>07</b>跨领域映射</a>
+        <a href="#glossary"><b>08</b>术语表</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 01 第一性原理 ============ -->
+  <section class="sec" id="principle">
+    <div class="wrap-narrow">
+      <div class="sec-head"><span class="sec-num">01</span><h2>第一性原理：两种稀缺与一个状态机</h2></div>
+      <p class="sec-intro">为什么折叠能"创造"空间？因为空间真正稀缺的从来不是面积本身。</p>
+
+      <div class="kp">
+        <span class="kp-tag">知识点</span>
+        <h3>空间的两种稀缺</h3>
+        <ul>
+          <li><b>平面稀缺</b>：面积 / 车长 / 占位不可再生。买不起更多，法规与物理限制改不了。</li>
+          <li><b>功能稀缺</b>：同一时刻同一块平面只能服务一个功能。床占着的地方，桌子就进不来。</li>
+        </ul>
+        <p>折叠设计的本质：<b>平面稀缺无法解除，但功能稀缺可以通过"错峰"绕开</b>——把"多功能同时在场"改成"多功能按需在场"。这就是为什么说折叠是把空间问题转化为时间问题。</p>
+      </div>
+
+      <div class="kp">
+        <span class="kp-tag">知识点</span>
+        <h3>一切折叠物都是一个状态机</h3>
+        <p>任何折叠构件都在四个状态之间循环。设计时必须为<b>每一个状态</b>单独负责，而不是只画"展开效果图"。</p>
+      </div>
+
+      <figure class="diagram">
+        <svg viewBox="0 0 860 170" role="img" aria-label="折叠状态机">
+          <defs>
+            <marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#49566a"/></marker>
+          </defs>
+          <g font-family="-apple-system,'PingFang SC',sans-serif">
+            <rect x="20" y="55" width="160" height="64" rx="12" fill="#fffdf7" stroke="#1d2530" stroke-width="1.8"/>
+            <text x="100" y="82" text-anchor="middle" font-size="16" font-weight="700" fill="#1d2530">① 收纳态</text>
+            <text x="100" y="103" text-anchor="middle" font-size="12" fill="#8b95a3">收拢 · 归位 · 让出空间</text>
+
+            <rect x="245" y="55" width="160" height="64" rx="12" fill="#dfeaf0" stroke="#2c6a8c" stroke-width="1.8"/>
+            <text x="325" y="82" text-anchor="middle" font-size="16" font-weight="700" fill="#1e4e68">② 过渡态</text>
+            <text x="325" y="103" text-anchor="middle" font-size="12" fill="#2c6a8c">展开中 · 扫掠 · 危险区</text>
+
+            <rect x="470" y="55" width="180" height="64" rx="12" fill="#f8e3d8" stroke="#d4502a" stroke-width="1.8"/>
+            <text x="560" y="82" text-anchor="middle" font-size="16" font-weight="700" fill="#a83a1a">③ 使用态（锁定）</text>
+            <text x="560" y="103" text-anchor="middle" font-size="12" fill="#a83a1a">承载 · 承重 · 必须锁定</text>
+
+            <path d="M180,87 L240,87" stroke="#49566a" stroke-width="1.6" marker-end="url(#arr)"/>
+            <path d="M405,87 L465,87" stroke="#49566a" stroke-width="1.6" marker-end="url(#arr)"/>
+            <path d="M560,119 L560,150 L100,150 L100,124" stroke="#49566a" stroke-width="1.6" stroke-dasharray="5 5" fill="none" marker-end="url(#arr)"/>
+            <text x="330" y="145" text-anchor="middle" font-size="12" fill="#8b95a3">④ 归位：使用结束 → 收拢复位（归位成本决定会不会真的收）</text>
+
+            <text x="200" y="76" text-anchor="middle" font-size="11" fill="#d4502a">展开操作</text>
+            <text x="435" y="76" text-anchor="middle" font-size="11" fill="#d4502a">就位+锁定</text>
+          </g>
+        </svg>
+        <figcaption><b>图 1</b> · 折叠状态机：收纳态 → 过渡态 → 使用态（锁定）→ 归位。90% 的设计失误发生在被忽视的②过渡态和④归位。</figcaption>
+      </figure>
+
+      <div class="think">
+        <span class="think-tag">思路细节</span>
+        <h3>设计顺序：先写状态表，再画形态</h3>
+        <ol class="steps">
+          <li><b>列出全部状态</b>——不只是"展开 / 收拢"，还有半开的过渡态、长期停留的中间态（折叠门开一半）。</li>
+          <li><b>为每个状态写职责</b>——使用态要承载多少、锁定在哪；收纳态占多深、露出什么；过渡态扫过多大范围、谁可能被夹。</li>
+          <li><b>画状态转换的成本</b>——每条转换边标上时间、动作数、力度。这条边就是用户每天真实付出的代价。</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <hr class="sec-divider">
+
+  <!-- ============ 02 六种基本运动 ============ -->
+  <section class="sec" id="motions">
+    <div class="wrap">
+      <div class="sec-head"><span class="sec-num">02</span><h2>六种基本运动：折叠的形态词汇表</h2></div>
+      <p class="sec-intro">无论室内、汽车还是家具，一切折叠动作都由这六种基本运动（外加"嵌套堆叠"这一变体）组合而成。每个动作给出了三个领域的对应实例。</p>
+
+      <div class="grid3">
+        <div class="card">
+          <span class="card-icon"><svg width="44" height="44" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="12" width="16" height="24" rx="1"/><path d="M24 12l14-4v28l-14 4" fill="rgba(208,80,42,.12)"/><path d="M24 12v28" stroke-dasharray="3 3"/></svg></span>
+          <h3>折 · Hinge Fold</h3>
+          <p>绕一条固定轴线旋转，最古老也最高效的折叠——展开比大、机构最简。</p>
+          <ul>
+            <li>室内：折叠隔断门</li><li>汽车：座椅靠背放倒</li><li>家具：墨菲床下翻</li>
+          </ul>
+        </div>
+        <div class="card">
+          <span class="card-icon"><svg width="44" height="44" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 36h32" stroke-dasharray="4 4"/><rect x="12" y="16" width="14" height="12" rx="1"/><path d="M34 22h6m0 0-4-4m4 4-4 4"/></svg></span>
+          <h3>滑 · Slide</h3>
+          <p>沿轨道平移，不占用旋转包络，最适合"藏进墙体 / 藏进地板"。</p>
+          <ul>
+            <li>室内：吊轨移门、暗藏滑轨墙</li><li>汽车：MPV 侧滑门、座椅滑轨</li><li>家具：拉出式床架、滑轨翻板桌</li>
+          </ul>
+        </div>
+        <div class="card">
+          <span class="card-icon"><svg width="44" height="44" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="14" y="10" width="20" height="14" rx="1"/><path d="M14 24c0 8 4 14 10 14" /><path d="M14 24l10 14" stroke-dasharray="3 3"/><path d="M36 12c4 3 5 8 3 12" /></svg></span>
+          <h3>翻 · Flip</h3>
+          <p>绕边缘翻转 90°–180°，常用"翻下即用、翻上即收"的垂直空间交换。</p>
+          <ul>
+            <li>室内：翻板床、翻板桌板</li><li>汽车：座椅坐垫上翻（魔术座椅）</li><li>家具：挂墙折叠桌、翻板凳</li>
+          </ul>
+        </div>
+        <div class="card">
+          <span class="card-icon"><svg width="44" height="44" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="4"/><path d="M38 24a14 14 0 1 1-6-11.5"/><path d="M33 8l-1 5 5 1"/></svg></span>
+          <h3>旋 · Swivel</h3>
+          <p>绕竖轴旋转，改变朝向而非大小，用于"同一位置换一种使用关系"。</p>
+          <ul>
+            <li>室内：旋转电视墙、转角衣帽间</li><li>汽车：座椅旋转对坐（露营模式）</li><li>家具：旋转书柜（藏床复合体）</li>
+          </ul>
+        </div>
+        <div class="card">
+          <span class="card-icon"><svg width="44" height="44" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="18" width="12" height="12" rx="1"/><rect x="20" y="20" width="9" height="8" rx="1"/><rect x="29" y="21.5" width="6" height="5" rx="1"/><path d="M38 24h4m0 0-3-3m3 3-3 3"/></svg></span>
+          <h3>伸 · Extend / Telescope</h3>
+          <p>多节套叠逐级拉出，收拢最短、展开最长，代价是节数越多刚性越差。</p>
+          <ul>
+            <li>室内：伸缩轨道、拉伸吊杆</li><li>汽车：伸缩方向盘、延长滑桌</li><li>家具：伸缩餐桌、拉伸沙发床</li>
+          </ul>
+        </div>
+        <div class="card">
+          <span class="card-icon"><svg width="44" height="44" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 40c-9 0-14-6-14-14 0-9 6-14 12-14s10 4 10 10-4 9-8 9-7-2.6-7-7 2.6-6 5-6 4 1.6 4 4"/><path d="M40 8l-8 6 8 2" opacity=".001"/></svg></span>
+          <h3>卷 · Roll</h3>
+          <p>绕筒卷收，收纳体积最小、无硬折痕，适合柔性材料（帘、幕、膜）。</p>
+          <ul>
+            <li>室内：卷帘隔断、投影幕</li><li>汽车：卷帘遮物帘、天幕</li><li>家具：卷收躺椅、纸家具</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="kp">
+        <span class="kp-tag">知识点</span>
+        <h3>变体：嵌套与堆叠（Nest &amp; Stack）</h3>
+        <p>严格说它不改变单件形态，而是让多个物体<b>相互占用对方的空间</b>：套凳（nesting tables）、可堆叠椅、行李箱中的行李箱。它的"机构成本"为零，是性价比最高的折叠——如果你能用"多件小物"替代"一件大物"，优先选嵌套。</p>
+      </div>
+
+      <div class="think">
+        <span class="think-tag">思路细节</span>
+        <h3>选运动方式的三个判据</h3>
+        <ol class="steps">
+          <li><b>看展开方向的空间预算</b>——横向没有余量选滑，垂直有余量选翻，一寸都不想占选卷 / 嵌套。</li>
+          <li><b>看刚性需求</b>——要承重（床、桌）优先折 + 锁；只需分隔（帘、幕）优先滑 / 卷。</li>
+          <li><b>看切换频次</b>——高频切换用单动作机构（翻 / 滑）；低频可接受多动作组合（先伸再旋再锁）。</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <hr class="sec-divider">
+
+  <!-- ============ 03 机构知识库 ============ -->
+  <section class="sec" id="mechanism">
+    <div class="wrap">
+      <div class="sec-head"><span class="sec-num">03</span><h2>机构知识库：五类核心机构</h2></div>
+      <p class="sec-intro">形态是外衣，机构是骨骼。折叠设计的成本、寿命、手感，几乎全部由机构层决定。</p>
+
+      <div class="grid2">
+        <div class="kp">
+          <span class="kp-tag">机构 1</span>
+          <h3>铰链 Hinge——决定轨迹的那根轴</h3>
+          <ul>
+            <li><b>轴线位置即轨迹</b>：铰链轴放在哪，构件就绕哪转。合页装边上是普通门，装中轴就是旋转门。</li>
+            <li><b>偏心铰链（offset hinge）</b>：把轴往外偏移，让门扇打开时"让出"门洞宽度——通行空间紧张处的关键技巧。</li>
+            <li><b>隐形门 / 暗铰链</b>：三维可调暗装铰链让折叠件收拢后与墙面齐平——"收拢态美学"的基础。</li>
+            <li>汽车对应：车门合页、引擎盖铰链；家具对应：翻板铰、阻尼缓冲铰。</li>
+          </ul>
+        </div>
+        <div class="kp">
+          <span class="kp-tag">机构 2</span>
+          <h3>滑轨 Slide Rail——承重与行程的平衡</h3>
+          <ul>
+            <li><b>三节滚珠滑轨</b>：家具标配，承重 25–60kg 为常见档位，全拉出 vs 三分之四拉出决定取物深度。</li>
+            <li><b>重载滑轨</b>：墨菲床横移、整墙家具（如机器人家具）用重载轨道，需关注满载时的下沉量。</li>
+            <li><b>阻尼与回弹</b>：阻尼决定"手感"，防夹与静音都靠它；高频使用的折叠件值得为阻尼多花钱。</li>
+            <li>汽车对应：座椅滑轨行程通常 200mm 出头，锁定档位密度影响坐姿微调体验。</li>
+          </ul>
+        </div>
+        <div class="kp">
+          <span class="kp-tag">机构 3</span>
+          <h3>连杆 Linkage——放大行程与力</h3>
+          <ul>
+            <li><b>四杆机构</b>：最基础的连杆系统，机架 + 曲柄 + 连杆 + 摇杆。用于把旋转转成受控的平面运动。</li>
+            <li><b>平行四边形机构</b>：两两平行的杆件让托盘"平移式升降"——升降桌、汽车座椅上翻托架常用。</li>
+            <li><b>剪式机构（scissor）</b>：交叉杆串联，行程放大倍数高，收拢极扁；多级串联可做到很大的升降范围。</li>
+            <li>典型应用：升降茶几、墨菲床的举升助力架、高空作业平台。</li>
+          </ul>
+        </div>
+        <div class="kp">
+          <span class="kp-tag">机构 4</span>
+          <h3>弹性元件 Spring——省力、缓冲、随位</h3>
+          <ul>
+            <li><b>气弹簧（gas spring）</b>：压缩气体提供推力，行程内力量均匀，可"随停"（任意位置悬停）；墨菲床、上翻柜门的核心助力件。</li>
+            <li><b>扭簧</b>：装在转轴上，让折叠件自动回位或抵消自重（折叠椅、座椅翻折解锁拉带的回位）。</li>
+            <li><b>选型核心参数</b>：行程、额定推力、安装距离。力量匹配自重力矩——床越重、力臂越长，需要的气弹簧越强。</li>
+          </ul>
+        </div>
+      </div>
+
+      <figure class="diagram">
+        <svg viewBox="0 0 860 240" role="img" aria-label="连杆与剪式机构示意">
+          <g font-family="-apple-system,'PingFang SC',sans-serif" font-size="12.5" fill="#49566a">
+            <!-- 四杆机构 -->
+            <g transform="translate(30,20)">
+              <rect x="0" y="0" width="380" height="200" rx="10" fill="#fbf8f0" stroke="#ddd5c6"/>
+              <text x="190" y="24" text-anchor="middle" font-size="14" font-weight="700" fill="#1d2530">四杆机构 · 以铰四边形为基础</text>
+              <!-- 地面机架 -->
+              <line x1="60" y1="160" x2="320" y2="160" stroke="#1d2530" stroke-width="3"/>
+              <g stroke="#8b95a3"><line x1="70" y1="160" x2="62" y2="172"/><line x1="100" y1="160" x2="92" y2="172"/><line x1="130" y1="160" x2="122" y2="172"/><line x1="290" y1="160" x2="282" y2="172"/><line x1="310" y1="160" x2="302" y2="172"/></g>
+              <!-- 杆件 -->
+              <line x1="80" y1="160" x2="112" y2="78" stroke="#d4502a" stroke-width="4" stroke-linecap="round"/>
+              <line x1="112" y1="78" x2="262" y2="60" stroke="#2c6a8c" stroke-width="4" stroke-linecap="round"/>
+              <line x1="262" y1="60" x2="300" y2="160" stroke="#d4502a" stroke-width="4" stroke-linecap="round"/>
+              <circle cx="80" cy="160" r="5" fill="#1d2530"/><circle cx="112" cy="78" r="5" fill="#1d2530"/><circle cx="262" cy="60" r="5" fill="#1d2530"/><circle cx="300" cy="160" r="5" fill="#1d2530"/>
+              <text x="52" y="148" font-size="12" fill="#8b95a3">机架（固定）</text>
+              <text x="88" y="108" fill="#a83a1a" font-weight="700">曲柄</text>
+              <text x="168" y="58" fill="#1e4e68" font-weight="700">连杆</text>
+              <text x="286" y="106" fill="#a83a1a" font-weight="700">摇杆</text>
+              <text x="190" y="192" text-anchor="middle" font-size="11.5" fill="#8b95a3">应用：座椅调角器联动、翻板助力架的骨架</text>
+            </g>
+            <!-- 剪式机构 -->
+            <g transform="translate(450,20)">
+              <rect x="0" y="0" width="380" height="200" rx="10" fill="#fbf8f0" stroke="#ddd5c6"/>
+              <text x="190" y="24" text-anchor="middle" font-size="14" font-weight="700" fill="#1d2530">剪式机构 · 行程放大器</text>
+              <line x1="70" y1="165" x2="310" y2="165" stroke="#1d2530" stroke-width="3"/>
+              <g stroke="#d4502a" stroke-width="3.5" stroke-linecap="round">
+                <line x1="80" y1="160" x2="130" y2="70"/><line x1="180" y1="160" x2="130" y2="70"/>
+                <line x1="130" y1="160" x2="180" y2="70"/><line x1="230" y1="160" x2="180" y2="70"/>
+                <line x1="180" y1="160" x2="230" y2="70"/><line x1="280" y1="160" x2="230" y2="70"/>
+              </g>
+              <rect x="105" y="46" width="200" height="18" rx="4" fill="#dfeaf0" stroke="#2c6a8c" stroke-width="1.6"/>
+              <g fill="#1d2530">
+                <circle cx="130" cy="70" r="4"/><circle cx="180" cy="70" r="4"/><circle cx="230" cy="70" r="4"/>
+                <circle cx="105" cy="160" r="4"/><circle cx="155" cy="160" r="4"/><circle cx="205" cy="160" r="4"/><circle cx="255" cy="160" r="4"/>
+              </g>
+              <path d="M310,150 v-84" stroke="#d4502a" stroke-width="1.6" marker-end="url(#arr2)"/>
+              <defs><marker id="arr2" markerWidth="9" markerHeight="9" refX="7" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 z" fill="#d4502a"/></marker></defs>
+              <text x="322" y="110" font-size="11.5" fill="#a83a1a">升起</text>
+              <text x="190" y="192" text-anchor="middle" font-size="11.5" fill="#8b95a3">应用：升降桌 / 升降茶几 / 墨菲床举升——收拢极扁，展开极高</text>
+            </g>
+          </g>
+        </svg>
+        <figcaption><b>图 2</b> · 两类最常"客串"折叠设计的连杆机构。连杆的价值：把简单的输入力变成受控的复杂轨迹。</figcaption>
+      </figure>
+
+      <div class="grid2">
+        <div class="kp">
+          <span class="kp-tag">机构 5</span>
+          <h3>锁定 Lock——折叠设计的命门</h3>
+          <ul>
+            <li><b>棘轮 / 调角器</b>：齿轮级锁定，档位感清晰——汽车座椅靠背的标准方案。</li>
+            <li><b>过死点自锁</b>：连杆越过死点后外力压不回——人躺在墨菲床上，体重反而把它锁得更紧。</li>
+            <li><b>磁吸 + 插销</b>：轻载用磁吸定位，重载必须机械插销——衣柜翻板用磁吸，床板绝对不能只靠磁吸。</li>
+            <li><b>原则：使用态必须锁定，失效必须安全（fail-safe）</b>——锁不住的折叠件等于一个待发的陷阱。</li>
+          </ul>
+        </div>
+        <div class="kp">
+          <span class="kp-tag">延伸</span>
+          <h3>电动化：直线推杆与伺服铰链</h3>
+          <ul>
+            <li><b>直线推杆</b>：升降桌、电动尾门、电动侧滑门的动力源，选型看推力、速度、噪音（dB）。</li>
+            <li><b>电动折叠的代价</b>：机构复杂度↑、故障点↑、靠背刚性往往为电机让路而下降、成本显著上升。</li>
+            <li><b>思路</b>：电动化只值得用在"高频 + 需要仪式感 + 双手被占用"的场景，否则手动 + 好阻尼是更可靠的答案。</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="sec-divider">
+
+  <!-- ============ 04 几何要点 ============ -->
+  <section class="sec" id="geometry">
+    <div class="wrap-narrow">
+      <div class="sec-head"><span class="sec-num">04</span><h2>几何要点：包络、扫掠与折叠比</h2></div>
+      <p class="sec-intro">机构决定"能不能折"，几何决定"折了之后世界还剩多少"。这一节是可以直接拿来自查的硬知识。</p>
+
+      <div class="kp">
+        <span class="kp-tag">知识点</span>
+        <h3>四个必须检查的几何量</h3>
+        <ul>
+          <li><b>展开包络（deployment envelope）</b>：构件完全展开时占的最大空间。墨菲床翻下需要伸出柜体约一张床垫的长度——房间进深减去这张床，还剩什么？</li>
+          <li><b>扫掠轨迹（sweep path）</b>：运动过程中扫过的柱状 / 扇形区域。门扇旋转扫过一个 90° 扇形，扇形内不能有固定物、插座、开关面板。</li>
+          <li><b>干涉与避让（interference / clearance）</b>：多构件联动时的相互让位。汽车座椅靠背放倒时，坐垫要先"下沉补偿"，否则靠背卡死——好的折叠设计处处是这种让位细节。</li>
+          <li><b>公差与旷量（tolerance / rattle）</b>：折叠件必然有活动间隙，间隙×使用次数＝旷量增长。设计时要给"磨损后的状态"留余量，否则新品的紧致只是暂时假象。</li>
+        </ul>
+      </div>
+
+      <div class="kp">
+        <span class="kp-tag">知识点</span>
+        <h3>折叠比：衡量折叠效率的硬指标</h3>
+        <p><b>折叠比 = 展开态可使用面积（或体积） : 收拢态占位面积（或体积）</b>。</p>
+        <ul>
+          <li>侧滑移门：约 1 : 1（不占开启包络，但墙体要留滑轨位）</li>
+          <li>翻板挂墙桌：约 4 : 1 到 8 : 1（桌面 120×60 收拢仅突出墙 6–8cm）</li>
+          <li>座椅靠背放倒：体积折叠比有限，但换来的是<b>连续平整载物面</b>——评价汽车折叠不能只看比例，还要看"平整度"与"载物面连续性"。</li>
+          <li>三浦折叠（Miura-ori）类刚体折纸：面积折叠比可超过 10 : 1，且单动作整体展开——用于太空太阳能帆板（1970 年代三浦公亮发明，1995 年随航天器在轨验证），是几何层折叠的极限示范。</li>
+        </ul>
+      </div>
+
+      <div class="think">
+        <span class="think-tag">思路细节</span>
+        <h3>把包络画出来，而不是想象出来</h3>
+        <ol class="steps">
+          <li><b>按 1:20 / 1:10 画真实展开过程</b>——尤其过渡态：门开到 45° 时走道还剩多少？座椅翻折扫过的圆弧碰到扶手箱吗？</li>
+          <li><b>用纸板做 1:10 运动样机</b>——机构的干涉问题，纸板模型暴露得比任何 3D 软件都快、都便宜。</li>
+          <li><b>给"人"留出操作包络</b>——操作折叠件需要站位 + 手臂空间：床翻下时人要退到哪里？拉出沙发床时人蹲在哪个 60cm 里？</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <hr class="sec-divider">
+
+  <!-- ============ 05 时序设计法 ============ -->
+  <section class="sec" id="timeline">
+    <div class="wrap-narrow">
+      <div class="sec-head"><span class="sec-num">05</span><h2>时序设计法：把一天写成场景剧本</h2></div>
+      <p class="sec-intro">几何与机构决定折叠"可不可行"，时序设计决定它"有没有价值"。这是三个领域中最高杠杆、也最常被忽略的一层。</p>
+
+      <div class="kp">
+        <span class="kp-tag">知识点</span>
+        <h3>切换成本三要素</h3>
+        <ul>
+          <li><b>时间</b>：完成一次状态转换的耗时。<b>经验阈值：单次切换应控制在 30 秒内</b>（"30 秒原则"），超过 1 分钟的切换在真实生活中几乎必然被放弃。</li>
+          <li><b>体力</b>：动作次数、需要移动的重量、是否单手可完成。搬开 15kg 的东西才能展开的床，一周后就会永久摊开。</li>
+          <li><b>心理阻力</b>：最隐形的一项——"等下还要收，算了"的一念之差。降低心理阻力的手段：让收纳态本身好看、给切换一个明确的"仪式终点"（如床翻上后磁吸"咔哒"定位）。</li>
+        </ul>
+      </div>
+
+      <div class="think">
+        <span class="think-tag">思路细节</span>
+        <h3>时序设计五步法（三领域通用）</h3>
+        <ol class="steps">
+          <li><b>行为清单</b>——把典型用户的一天（或一次出行）拆成时段 × 行为 × 时长：睡觉 7h、办公 8h、用餐 1.5h……诚实统计，不理想化。</li>
+          <li><b>空间需求标注</b>——每个行为需要什么：面积、设备、声 / 光 / 隐私要求。会发现 80% 行为只需要 20% 的"重装备"。</li>
+          <li><b>共享空间对判定</b>——哪两个功能可以共用一块空间？判据：①时间基本不重叠 ②切换 ≤ 2 步 ③归位后不影响下一个功能。<b>这是折叠设计最核心的一个判断。</b></li>
+          <li><b>机构选型</b>——根据切换频次和承重需求，回到第 03 节选运动方式与机构。高频轻载 → 滑 / 卷 + 阻尼；低频重载 → 折 + 锁 + 助力。</li>
+          <li><b>模拟验证</b>——在剧本里"过"完一整天：每次切换的总时间、与谁冲突、疲劳点在哪。纸面推演就能消灭大半方案缺陷。</li>
+        </ol>
+      </div>
+
+      <div class="kp">
+        <span class="kp-tag">知识点</span>
+        <h3>主态（Dominant State）：折叠设计的锚点</h3>
+        <p>一个可变空间里，<b>使用时长最长的状态应当是"基础形态"</b>，其他状态围绕它折叠展开。</p>
+        <ul>
+          <li>卧室兼书房，若睡眠 7h &gt; 办公 8h 前后都在客厅发生——那床是主态，书桌要能整个消失，而不是床折叠。</li>
+          <li>汽车若 90% 时间单人通勤——二排座椅的"放倒便利性"比三排座椅的"存在感"重要。</li>
+          <li>主态判断错误是折叠设计最昂贵的失误：它会让你花大价钱让"最常用的东西"为"最不常用的东西"让路。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <hr class="sec-divider">
+
+  <!-- ============ 06 安全与耐久 ============ -->
+  <section class="sec" id="safety">
+    <div class="wrap-narrow">
+      <div class="sec-head"><span class="sec-num">06</span><h2>安全与耐久：折叠的账单</h2></div>
+      <p class="sec-intro">折叠件 = 引入活动部件 = 引入磨损、夹点和失效模式。安全不是加分项，是入场券。</p>
+
+      <div class="grid2">
+        <div class="kp">
+          <span class="kp-tag">知识点</span>
+          <h3>四个安全底线</h3>
+          <ul>
+            <li><b>防夹（pinch point）</b>：所有铰点、滑轨端部、翻板边缘都是夹点。家用折叠件用阻尼 + 限位缝隙控制；汽车有法规级防夹要求（如电动门窗 / 尾门反转）。</li>
+            <li><b>锁定失效安全</b>：问一句"锁失效时会怎样？"——墨菲床过死点设计让失效方向是"更锁紧"而不是"砸下来"。</li>
+            <li><b>承载冗余</b>：使用态载荷按预期峰值 ×1.5 以上设计，动态载荷（人坐下的一瞬）远大于静态体重。</li>
+            <li><b>儿童与老人</b>：操作力、操作高度、误操作路径都要按家庭最弱成员校核。</li>
+          </ul>
+        </div>
+        <div class="kp">
+          <span class="kp-tag">知识点</span>
+          <h3>耐久：一切按循环次数思考</h3>
+          <ul>
+            <li><b>定义你的循环寿命目标</b>：每天 2 次切换 × 10 年 ≈ 7000+ 次循环。五金样本上写的"5 万次测试"是实验室值，真实工况（灰尘、潮气、偏载）要打折。</li>
+            <li><b>磨损三大来源</b>：滑轨进灰（异响与卡滞主因）、铰接点偏载（旷量扩大）、锁定件磨损（锁不紧）。</li>
+            <li><b>可维护性设计</b>：五金用标准件、孔位标准化、能单独更换——折叠设计的可持续性在售后环节。</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="sec-divider">
+
+  <!-- ============ 07 跨领域映射 ============ -->
+  <section class="sec" id="mapping">
+    <div class="wrap">
+      <div class="sec-head"><span class="sec-num">07</span><h2>跨领域原则映射表</h2></div>
+      <p class="sec-intro">同一设计原则在三个领域的"变身"。这是本站的核心表格——看懂它，你就掌握了跨领域迁移折叠设计的能力。</p>
+
+      <div class="table-wrap">
+        <table>
+          <tr><th style="width:16%">设计原则</th><th>室内</th><th>汽车</th><th>家具</th></tr>
+          <tr><td>状态锁定</td><td>折叠门磁吸定位 / 移门限位</td><td>座椅调角器棘轮、碰撞锁止双锁扣</td><td>墨菲床过死点撑杆、翻板磁吸</td></tr>
+          <tr><td>扫掠包络让位</td><td>门扇 90° 扇形区不放家具与开关</td><td>靠背放倒前坐垫下沉补偿</td><td>翻板下落弧线内净空，桌下不设抽屉</td></tr>
+          <tr><td>时序复用</td><td>客厅 ↔ 卧室 ↔ 办公室一日三变</td><td>5 座载人 ↔ 纯平载货 ↔ 对坐露营</td><td>沙发 ↔ 客床，餐桌 ↔ 工作台</td></tr>
+          <tr><td>省力与缓冲</td><td>闭门器 / 地弹簧、吊轨静音</td><td>easy-entry 座椅前翻、电动尾门防夹</td><td>气弹簧助力、阻尼铰链防砸手</td></tr>
+          <tr><td>收拢态美学</td><td>隐形门与墙齐平、暗藏滑轨</td><td>放倒后与行李舱地板齐平成一体</td><td>收起后是一件完整柜体而非"补丁"</td></tr>
+          <tr><td>主态优先</td><td>时长最长的功能占据基础格局</td><td>高频场景（通勤）决定座椅基础布置</td><td>床垫座深按独立家具标准不打折</td></tr>
+          <tr><td>失效安全</td><td>地弹簧失效门仍可手动开合</td><td>电动折叠失效保留手动应急解锁</td><td>气弹簧失效时床靠过死点不下坠</td></tr>
+        </table>
+      </div>
+      <p class="table-note">读法：先看左列原则（应背下来），再看它在陌生领域的空位——那往往就是创新机会。</p>
+    </div>
+  </section>
+
+  <hr class="sec-divider">
+
+  <!-- ============ 08 术语表 ============ -->
+  <section class="sec" id="glossary">
+    <div class="wrap">
+      <div class="sec-head"><span class="sec-num">08</span><h2>术语速查表</h2></div>
+      <dl class="glossary">
+        <div><dt>折叠比 <small>deployment ratio</small></dt><dd>展开可用面积（体积）与收拢占位之比，衡量折叠效率的核心指标。</dd></div>
+        <div><dt>展开包络 <small>envelope</small></dt><dd>构件完全展开时占据的最大空间边界。</dd></div>
+        <div><dt>扫掠轨迹 <small>sweep path</small></dt><dd>运动过程扫过的区域，区域内必须净空。</dd></div>
+        <div><dt>干涉 / 避让 <small>interference / clearance</small></dt><dd>运动构件与其他构件的冲突与让位关系。</dd></div>
+        <div><dt>主态 <small>dominant state</small></dt><dd>可变空间中使用时长最长的状态，应作为基础形态。</dd></div>
+        <div><dt>切换成本 <small>switching cost</small></dt><dd>状态转换的时间 + 体力 + 心理阻力；超 30 秒的切换易被放弃。</dd></div>
+        <div><dt>过死点自锁 <small>over-center lock</small></dt><dd>连杆越过死点位置后载荷方向使其自锁的机构特性。</dd></div>
+        <div><dt>气弹簧 <small>gas spring</small></dt><dd>以压缩气体提供推力的弹性执行件，可随停、助展开。</dd></div>
+        <div><dt>阻尼 <small>damping</small></dt><dd>控制运动速度的缓冲特性，决定使用手感与防夹安全。</dd></div>
+        <div><dt>调角器 <small>recliner</small></dt><dd>座椅靠背角度调节的棘轮锁定机构。</dd></div>
+        <div><dt>H 点 <small>H-point</small></dt><dd>人体胯点，汽车布置的基准点，决定乘坐空间链条。</dd></div>
+        <div><dt>easy-entry <small>翘起入位</small></dt><dd>座椅一键前翻 + 前移，放行后排乘员进入的机构。</dd></div>
+        <div><dt>沉入式折叠 <small>stow-in-floor</small></dt><dd>座椅整体翻折沉入地板下方，多用于 MPV 第三排。</dd></div>
+        <div><dt>三浦折叠 <small>Miura-ori</small></dt><dd>三浦公亮发明的刚体折纸结构，单动作整体展开，用于航天帆板。</dd></div>
+        <div><dt>纯平 <small>flat-fold</small></dt><dd>座椅放倒后与地板形成连续平面，角度偏差以度计，3–5° 已可感知。</dd></div>
+      </dl>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <h4>关于本站</h4>
+      <p>「空间折叠设计手册」是一份面向设计学习者与从业者的知识整理：用同一套模型（几何 / 机构 / 时序）解释室内、汽车、家具三个领域的折叠设计。文中尺寸与数据为行业常用经验值或公开资料，实际项目请以规范与实测为准。</p>
+    </div>
+    <div>
+      <h4>页面导航</h4>
+      <ul>
+        <li><a href="index.html">总览 · 什么是空间折叠</a></li>
+        <li><a href="interior.html">室内空间折叠</a></li>
+        <li><a href="automotive.html">汽车空间折叠</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>继续阅读</h4>
+      <ul>
+        <li><a href="furniture.html">家具空间折叠</a></li>
+        <li><a href="methodology.html#mechanism">回到机构知识库</a></li>
+        <li><a href="index.html#domains">三大领域对照</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 空间折叠设计手册 · 用折纸的逻辑理解空间</div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

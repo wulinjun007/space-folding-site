@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>空间折叠设计手册 · 让一个空间变成 N 个空间</title>
+<meta name="description" content="空间折叠设计知识库：覆盖室内、汽车、家具三大领域的折叠设计原理、机构知识、设计思路与案例拆解。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231d2530'/%3E%3Cpath d='M7 8h18L7 25z' fill='%23d4502a'/%3E%3Cpath d='M25 8v17H7z' fill='%23f6f3ec'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html">
+      <svg width="26" height="26" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#1d2530"/><path d="M7 8h18L7 25z" fill="#d4502a"/><path d="M25 8v17H7z" fill="#f6f3ec"/></svg>
+      空间折叠 <small>SPACE-FOLDING HANDBOOK</small>
+    </a>
+    <button class="nav-toggle" aria-label="菜单">☰</button>
+    <nav class="nav-links">
+      <a href="index.html">总览</a>
+      <a href="methodology.html">通用方法论</a>
+      <a href="interior.html">室内</a>
+      <a href="automotive.html">汽车</a>
+      <a href="furniture.html">家具</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- ============ Hero ============ -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div>
+        <span class="hero-kicker">SPACE-FOLDING DESIGN</span>
+        <h1>空间折叠设计<br>把<em>一个空间</em>，变成 N 个空间</h1>
+        <p class="hero-lede">通过可动结构与时间维度的功能编排，让同一物理空间在不同时刻承载不同功能——室内、汽车、家具，遵循的是同一套底层逻辑。</p>
+        <p class="hero-sub">核心命题：<code>空间问题</code> → <code>时间 + 机构</code> 的问题</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="methodology.html">先看通用方法论 →</a>
+          <a class="btn btn-ghost" href="#domains">直达三大领域</a>
+        </div>
+      </div>
+      <div class="fold-stage" aria-hidden="true">
+        <div class="fold-paper">
+          <span class="fold-axis">折轴 / FOLD AXIS</span>
+          <div class="fp fp-a"></div>
+          <div class="fp fp-b"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 定义 ============ -->
+  <section class="sec" id="definition">
+    <div class="wrap-narrow">
+      <div class="sec-head"><span class="sec-num">01</span><h2>什么是空间折叠设计</h2></div>
+      <p class="sec-intro">一个定义，三个推论。这是整本手册的总纲。</p>
+
+      <div class="kp">
+        <span class="kp-tag">定义</span>
+        <h3>空间折叠设计（Space-Folding Design）</h3>
+        <p>以<b>可动结构</b>（折叠、滑动、翻转、伸缩、旋转、卷收、嵌套）为手段，配合<b>时间维度的功能编排</b>，让同一物理空间在"不同时刻 = 不同功能"的意义下被多次使用，从而在面积、体积、轴距等硬约束不变的前提下，大幅提升空间的功能密度。</p>
+        <p>它不是"把东西做小"，而是<b>让功能按需在场、按需退场</b>：不用的功能收起（折叠），把资源让给当下正在发生的功能。</p>
+      </div>
+
+      <div class="grid3">
+        <div class="card blue">
+          <h3>推论一：面积是常数，需求是变量</h3>
+          <p>户型、车长、家具占位一旦确定就是硬约束；但人的行为一天之内变化十几次。用静态空间匹配动态需求，必然浪费。</p>
+        </div>
+        <div class="card blue">
+          <h3>推论二：多功能不必同时在场</h3>
+          <p>床和客厅很少同时需要。冲突只发生在"功能重叠的瞬间"，折叠设计就是把重叠瞬间拆开——错峰，而不是加面积。</p>
+        </div>
+        <div class="card blue">
+          <h3>推论三：每次折叠都在借时间换空间</h3>
+          <p>折叠不是免费的：要花切换时间、体力、维护成本。折叠设计做得好不好，本质是<b>这笔交换划不划算</b>。</p>
+        </div>
+      </div>
+
+      <div class="note">本站把「空间折叠」拆成三个层面来讲解：几何层（怎么折）、机构层（用什么折）、时序层（什么时候折）。三个领域的具体做法千差万别，但这三层模型完全通用。</div>
+    </div>
+  </section>
+
+  <!-- ============ 三层模型 ============ -->
+  <section class="sec" id="model">
+    <div class="wrap">
+      <div class="sec-head"><span class="sec-num">02</span><h2>三层折叠模型：几何 · 机构 · 时序</h2></div>
+      <p class="sec-intro">任何空间折叠方案，都可以拆解到这三层。分析竞品、做自己的设计，都从这三层入手。</p>
+
+      <div class="grid3">
+        <div class="card model-card">
+          <span class="mc-layer">LAYER 1 · 几何层</span>
+          <h3>怎么折——形态语言</h3>
+          <p>折叠在几何上如何发生：绕轴折、沿轨滑、绕点旋、逐节伸、绕筒卷、彼此嵌套。决定了展开包络、扫掠轨迹和收拢后的形状。</p>
+          <p style="margin-top:10px"><a href="methodology.html#motions">六种基本运动 →</a></p>
+        </div>
+        <div class="card model-card">
+          <span class="mc-layer">LAYER 2 · 机构层</span>
+          <h3>用什么折——物理实现</h3>
+          <p>铰链、滑轨、连杆、气弹簧、锁定机构、电动推杆。机构决定承重、寿命、操作力、安全，也决定成本的大头。</p>
+          <p style="margin-top:10px"><a href="methodology.html#mechanism">机构知识库 →</a></p>
+        </div>
+        <div class="card model-card">
+          <span class="mc-layer">LAYER 3 · 时序层</span>
+          <h3>什么时候折——功能编排</h3>
+          <p>把一天（或一次出行）写成场景剧本：每个时段需要什么状态、切换发生在哪里、切换成本多高。折叠的价值由时序设计释放。</p>
+          <p style="margin-top:10px"><a href="methodology.html#timeline">时序设计法 →</a></p>
+        </div>
+      </div>
+
+      <div class="think">
+        <span class="think-tag">思路细节</span>
+        <h3>用三层模型诊断一个失败的折叠方案</h3>
+        <ol class="steps">
+          <li><b>先查时序层</b>——大多数失败不是机构坏了，而是"切换太麻烦，用户永远不折"。切换成本高于心理阈值，再精妙的机构也是摆设。</li>
+          <li><b>再查几何层</b>——展开包络放不放得下？扫掠轨迹撞不撞东西？收拢后形态是否完整？很多方案折是能折，展开后房子没法住了。</li>
+          <li><b>最后查机构层</b>——承重、寿命、松动、异响。机构问题通常出现得最晚，但毁掉信任最快。</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 三大领域 ============ -->
+  <section class="sec" id="domains">
+    <div class="wrap">
+      <div class="sec-head"><span class="sec-num">03</span><h2>三大领域：同一逻辑，三种战场</h2></div>
+      <p class="sec-intro">每个领域有自己的核心矛盾。理解矛盾，才能理解为什么那里的折叠设计长成那个样子。</p>
+
+      <div class="grid3">
+        <a class="domain-card" href="interior.html">
+          <span class="dc-tag">领域一 · INTERIOR</span>
+          <span class="card-icon"><svg width="40" height="40" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="7" width="34" height="34" rx="2"/><path d="M24 7v34" stroke-dasharray="3 4"/><path d="M17 20v8l8-4z" fill="currentColor" stroke="none"/></svg></span>
+          <h3>室内空间折叠</h3>
+          <p class="dc-conflict">核心矛盾：<b>面积 × 层高是常数，一天之内的行为是变量</b>。墙体不动，功能就得互斥。</p>
+          <span class="dc-list">平面折叠 · 竖向分层 · 视觉延伸 · 时序复用<br>案例：32㎡ 变 24 格局的香港微宅 / 日式和室</span>
+        </a>
+        <a class="domain-card" href="automotive.html">
+          <span class="dc-tag">领域二 · AUTOMOTIVE</span>
+          <span class="card-icon"><svg width="40" height="40" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 30l3-9c.7-2 2.3-3 4.4-3h21.2c2.1 0 3.7 1 4.4 3l3 9"/><path d="M6 30h36v6h-4M6 30v6h4"/><circle cx="14" cy="36" r="3.6"/><circle cx="34" cy="36" r="3.6"/><path d="M20 18l4-6 4 6" stroke-dasharray="2.5 3"/></svg></span>
+          <h3>汽车空间折叠</h3>
+          <p class="dc-conflict">核心矛盾：<b>乘员空间与载物空间争夺同一根轴距</b>——载人要 5 座，拉货要 1.7 米的纯平地板。</p>
+          <span class="dc-list">座椅分级折叠 · 纯平地台 · 场景模式座舱<br>案例：本田魔术座椅 / Model Y 一键放倒 / 场景化 MPV</span>
+        </a>
+        <a class="domain-card" href="furniture.html">
+          <span class="dc-tag">领域三 · FURNITURE</span>
+          <span class="card-icon"><svg width="40" height="40" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M10 38V14l14-6 14 6v24"/><path d="M10 26l14-5 14 5" stroke-dasharray="3 3"/><path d="M24 21v17"/><path d="M10 38h28"/></svg></span>
+          <h3>家具空间折叠</h3>
+          <p class="dc-conflict">核心矛盾：<b>一件家具只干一件事太浪费</b>——沙发每天被坐 3 小时，其余 21 小时只是占地。</p>
+          <span class="dc-list">墨菲床 · 伸缩桌 · 折叠椅 · 模块化重组<br>案例：旋转书柜床 / 机器人家具 / 折纸结构家具</span>
+        </a>
+      </div>
+
+      <div class="note" style="margin-top:30px">三个领域的关系不是并列，而是<b>尺度递进</b>：家具是"房间里的折叠"，室内是"整屋尺度的折叠"，汽车是"把整屋折叠塞进一根轴距"。建议先读通用方法论，再按需深入领域页。</div>
+    </div>
+  </section>
+
+  <!-- ============ 为什么是现在 ============ -->
+  <section class="sec" id="why-now">
+    <div class="wrap">
+      <div class="sec-head"><span class="sec-num">04</span><h2>为什么是现在</h2></div>
+      <p class="sec-intro">空间折叠不是新概念（折叠椅自古罗马就有），但四股力量让它从"小众技巧"变成"主流设计范式"。</p>
+      <div class="grid4">
+        <div class="card">
+          <h3>🏠 居住密度</h3>
+          <p>大城市房价与人均居住面积的紧张（香港人均居住面积约 15–16㎡），让"一房多用"从可选变成必选。</p>
+        </div>
+        <div class="card">
+          <h3>🔋 电动化平台</h3>
+          <p>电池平铺带来纯平地台，座椅放倒更容易做到纯平，车厢"模式化"设计的自由度空前提高。</p>
+        </div>
+        <div class="card">
+          <h3>💻 居家办公</h3>
+          <p>远程与混合办公常态化，同一房间需要在"卧室 / 办公室 / 健身房"之间每日切换，时序折叠成为刚需。</p>
+        </div>
+        <div class="card">
+          <h3>⛺ 场景经济</h3>
+          <p>露营、车载午休、尾舱咖啡等场景流行，汽车从交通工具变成"可展开的生活空间"。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 阅读路径 ============ -->
+  <section class="sec" id="reading">
+    <div class="wrap-narrow">
+      <div class="sec-head"><span class="sec-num">05</span><h2>阅读路径建议</h2></div>
+      <div class="table-wrap">
+        <table>
+          <tr><th>你是谁</th><th>建议路径</th><th>带走什么</th></tr>
+          <tr><td>设计初学者</td><td>总览 → 通用方法论 → 任选一个领域页</td><td>三层模型 + 六种基本运动 + 时序设计法</td></tr>
+          <tr><td>室内 / 空间从业者</td><td>室内页 → 方法论·机构库 → 检查清单</td><td>共享空间对判定法 + 尺寸数据 + 清单 12 条</td></tr>
+          <tr><td>汽车产品 / 布置工程师</td><td>汽车页 → 方法论·时序设计法</td><td>场景定义空间五步法 + 折叠代价核算</td></tr>
+          <tr><td>家具 / 产品设计师</td><td>家具页 → 方法论·机构库 → 案例拆解</td><td>机构选型表 + 频次×时长矩阵</td></tr>
+        </table>
+      </div>
+      <div class="hero-cta" style="margin-top:26px">
+        <a class="btn btn-primary" href="methodology.html">开始阅读：通用方法论 →</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <h4>关于本站</h4>
+      <p>「空间折叠设计手册」是一份面向设计学习者与从业者的知识整理：用同一套模型（几何 / 机构 / 时序）解释室内、汽车、家具三个领域的折叠设计。文中尺寸与数据为行业常用经验值或公开资料，实际项目请以规范与实测为准。</p>
+    </div>
+    <div>
+      <h4>页面导航</h4>
+      <ul>
+        <li><a href="index.html">总览 · 什么是空间折叠</a></li>
+        <li><a href="methodology.html">通用方法论</a></li>
+        <li><a href="interior.html">室内空间折叠</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>领域页面</h4>
+      <ul>
+        <li><a href="automotive.html">汽车空间折叠</a></li>
+        <li><a href="furniture.html">家具空间折叠</a></li>
+        <li><a href="methodology.html#glossary">术语速查表</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 空间折叠设计手册 · 用折纸的逻辑理解空间</div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
